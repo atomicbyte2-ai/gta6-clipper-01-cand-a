@@ -213,7 +213,6 @@ const manifest = {
   sha256,
   pitch_text: cutlist.pitch_text,
   play_code: cutlist.play_code,
-  generated_at: new Date().toISOString(),
 };
 writeFileSync(join(outDir, "clip-manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
 
